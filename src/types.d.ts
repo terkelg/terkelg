@@ -1,5 +1,5 @@
 declare module '*.json' {
-  type Year = import('./src/worker').Year;
+  type Year = import('./worker').Year;
 
   const value: {
     years: Year[];

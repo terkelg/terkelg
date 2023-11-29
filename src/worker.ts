@@ -1,5 +1,5 @@
 import { fallback, link, main, top } from './render.js';
-import data from './stats.json';
+import data from '~STATS~'; // see scripts/build.ts
 
 export type Year = {
   from: string;

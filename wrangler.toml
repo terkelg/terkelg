@@ -1,3 +1,6 @@
 name = "terkelg"
-main = "src/worker.ts"
+main = "build/worker.js"
 compatibility_date = "2023-11-21"
+
+[build]
+command = "npm run build"

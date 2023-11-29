@@ -60,7 +60,7 @@ export default {
         return [width, height];
       });
 
-      // Calculatre total length based on the width of the columns and the year gap
+      // Calculate total length based on the width of the columns and the year gap
       const length =
         sizes.reduce((acc, size) => {
           acc += size[0] + options.year.gap;

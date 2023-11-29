@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises';
-import { Year } from '../src/worker';
+import type { Year } from '../src/worker';
 
 export const START_DATE = new Date('2012-09-07T04:00:00.000Z');
 

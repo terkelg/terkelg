@@ -6,8 +6,10 @@
   "scripts": {
     "start": "wrangler dev",
     "deploy": "pnpm stats && wrangler deploy",
-    "format": "prettier --write .",
-    "stats": "tsm --env-file .env scripts/stats.ts"
+    "format": "prettier --write {src,scripts}",
+    "stats": "tsm --env-file .env scripts/stats.ts",
+    "lint": "prettier --check {src,scripts}",
+    "types": "tsc --noEmit"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231121.0",

@@ -1,10 +1,6 @@
 import { fallback, link, main, top } from './render.js';
 import data from './stats.json';
 
-export interface Env {
-  GITHUB_CONTRIBUTIONS: KVNamespace;
-}
-
 export type Year = {
   from: string;
   to: string;
@@ -13,8 +9,8 @@ export type Year = {
 
 const MAX_YEARS = 3;
 
-export default {
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+const worker: ExportedHandler = {
+  async fetch(request, env, ctx) {
     const { searchParams } = new URL(request.url);
     const theme = (searchParams.get('theme') ?? 'light') as 'light' | 'dark';
     const section = searchParams.get('section') ?? '';
@@ -80,3 +76,5 @@ export default {
     });
   }
 };
+
+export default worker;

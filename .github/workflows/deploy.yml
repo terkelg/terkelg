@@ -1,4 +1,4 @@
-name: Update KV data
+name: Regenerate
 
 on:
   push:

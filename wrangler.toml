@@ -1,0 +1,9 @@
+name = "terkelg"
+main = "src/worker.ts"
+compatibility_date = "2023-11-21"
+
+# Bind a KV Namespace. Use KV as persistent storage for small key-value pairs.
+# Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
+[[kv_namespaces]]
+binding = "GITHUB_CONTRIBUTIONS"
+id = "21bba854ac7e4df7ab1204950100121b"

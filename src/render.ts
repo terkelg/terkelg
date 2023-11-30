@@ -1,4 +1,4 @@
-import { Year } from './worker';
+import type { Year } from './worker';
 
 const BP_MEDIUM = 550;
 const BP_LARGE = 700;
@@ -149,9 +149,9 @@ export const shared = /* css */ `
 
 	.shine {
 		background-color: var(--color-text);
-		background-image: linear-gradient(-75deg, 
+		background-image: linear-gradient(-75deg,
 			rgb(0 0 0 / 0) 0%,
-			rgb(255 255 255 / 0.18) 15%, 
+			rgb(255 255 255 / 0.18) 15%,
 			rgb(0 0 0 / 0) 25%
 		);
 		background-size: 200%;

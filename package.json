@@ -6,9 +6,9 @@
   "scripts": {
     "start": "wrangler dev",
     "deploy": "pnpm stats && wrangler deploy",
-    "format": "prettier --write {src,scripts}",
+    "format": "prettier --write ./{src,scripts}/*",
     "stats": "tsm --env-file .env scripts/stats.ts",
-    "lint": "prettier --check {src,scripts}",
+    "lint": "prettier --check ./{src,scripts}/*",
     "types": "tsc --noEmit"
   },
   "devDependencies": {
